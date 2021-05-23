@@ -4,12 +4,9 @@ Thank you for checking out my Simple Reddit Feed!
 
 After cloning the repository, place ensure the following in Android Studio.
 
-Kotlin Version: 1.4.20
-
-Compiled SDK Version: 29 (minimum support for 23)
-
-JVM Target is 1.8
-
+<b>Kotlin Version:</b> 1.4.20  
+<b>Compiled SDK Version:</b> 29 (minimum support for 23)  
+<b>JVM Target:</b> 1.8  
 
 With those settings configured, you can build and run the app from Android Studio.
 
@@ -23,10 +20,9 @@ Each Item can be clicked on and you'll be brought to another screen, where the s
 
 On the list screen, the second tab (PINNED) contains a list of all items that were pinned from the HOT list. Items in this list are stored on the device and persist the app closing and device restarting. The items in this list contain the same information as the HOT list (requirement 4).
 
-The HOT list can be refreshed by pulling down on the list. The HOT list also contains pinned items that are no longer part of the HOT list from Reddit. If you unpin an item that is no longer part of Reddit's HOT list, the item will be removed from the list (requirement 5).
+The HOT list can be refreshed by pulling down on the list. The HOT list also contains pinned items that are no longer part of the HOT list from Reddit. If you unpin an item that is no longer part of Reddit's HOT list, the item will be removed from the list (requirement 5).  
 
-
-Some notes about the app:
+<b>Some notes about the app:</b>
 
 The category field was always returning null from Reddit (even in a browser), so I used the subreddit field in its place.
 
@@ -34,15 +30,14 @@ I made the decision to not include any unit testing. Given the nature of the pro
 
 If this app were to be continued, I would have used the jetpack Paging library to implement an infinite scroll. 
 
-The Feed Item page could contain a lot more information - but UIs take time to design and I don't think would have showcased much more technical ability. Getting more information to display from Reddit, would have just been a matter of adding more fields to the Data Transfer Objects and Moshi would have done the conversions.
-
+The Feed Item page could contain a lot more information - but UIs take time to design and I don't think would have showcased much more technical ability. Getting more information to display from Reddit, would have just been a matter of adding more fields to the Data Transfer Objects and Moshi would have done the conversions.  
 
 And finally, libraries that I chose to use:
 
-Retrofit: for the HTTP client to do the GET request from Reddit.
-Moshi: for parsing and converting the JSON objects to Kotlin objects.
-Glide: for loading images from the web, and to sync loading images with the lists's RecyclerViews
-Room: for offline persistent storage.
-Jetpack Navigation: for fragment transitions and passing arguments between fragments.
-Coroutines and LiveData: for asynchronous IO and binding data to their views.
+<b>Retrofit:</b> for the HTTP client to do the GET request from Reddit.  
+<b>Moshi:</b> for parsing and converting the JSON objects to Kotlin objects.  
+<b>Glide:</b> for loading images from the web, and to sync loading images with the lists's RecyclerViews.  
+<b>Room:</b> for offline persistent storage.  
+<b>Jetpack Navigation:</b> for fragment transitions and passing arguments between fragments.  
+<b>Coroutines and LiveData:</b> for asynchronous IO and binding data to their views.  
 
