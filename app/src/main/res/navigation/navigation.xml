@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/feedList">
+    <fragment
+        android:id="@+id/feedList"
+        android:name="com.dkmarkell.redditfeed.ui.FeedListScreenFragment"
+        android:label="FeedList" >
+        <action
+            android:id="@+id/action_feedList_to_feedItem"
+            app:destination="@id/feedItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedItem"
+        android:name="com.dkmarkell.redditfeed.ui.FeedItemFragment"
+        android:label="FeedItem" >
+        <argument
+            android:name="FeedItemArgs"
+            app:argType="com.dkmarkell.redditfeed.domain.FeedItem" />
+    </fragment>
+</navigation>

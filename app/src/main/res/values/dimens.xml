@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_side_padding">8dp</dimen>
+    <dimen name="screen_top_bottom_padding">8dp</dimen>
+    <dimen name="feed_list_item_title_text_size">16sp</dimen>
+    <dimen name="feed_list_item_vertical_margin">8dp</dimen>
+    <dimen name="feed_list_item_horizontal_margin">8dp</dimen>
+    <dimen name="feed_list_item_date_text_size">12sp</dimen>
+    <dimen name="feed_item_title_size">24sp</dimen>
+    <dimen name="feed_item_text_size">18sp</dimen>
+</resources>

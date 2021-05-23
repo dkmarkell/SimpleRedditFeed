@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Simple Reddit Feed</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="feed_app_bar_title">Simple Reddit Feed</string>
+    <string name="feed_list_item_updated_on_text">Created on \u0020</string>
+    <string name="feed_item_by_text">By \u0020</string>
+    <string name="tab_option_hot">HOT</string>
+    <string name="tab_option_pinned">PINNED</string>
+</resources>

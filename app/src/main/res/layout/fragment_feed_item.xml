@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar_feed_item"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+                app:titleTextColor="?attr/colorOnPrimary">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/feed_item_pin_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/feed_list_item_horizontal_margin"
+                    android:src="@drawable/ic_baseline_bookmark_24_white" />
+
+
+            </com.google.android.material.appbar.MaterialToolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/feed_item_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/feed_item_constraint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+                <ImageView
+                    android:id="@+id/feed_item_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_image_24"
+                    android:layout_marginTop="@dimen/feed_list_item_vertical_margin"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/feed_item_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/feed_list_item_horizontal_margin"
+                    android:layout_marginTop="@dimen/feed_list_item_vertical_margin"
+                    android:layout_marginEnd="@dimen/feed_list_item_horizontal_margin"
+                    android:text=""
+                    android:textSize="@dimen/feed_item_title_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/feed_item_image"
+                    tools:text="Title" />
+
+                <TextView
+                    android:id="@+id/feed_item_by_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/feed_list_item_horizontal_margin"
+                    android:layout_marginTop="@dimen/feed_list_item_vertical_margin"
+                    android:layout_marginEnd="@dimen/feed_list_item_horizontal_margin"
+                    android:text="@string/feed_item_by_text"
+                    android:textSize="@dimen/feed_item_text_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/feed_item_title" />
+
+                <TextView
+                    android:id="@+id/feed_item_author_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/feed_item_text_size"
+                    app:layout_constraintBottom_toBottomOf="@+id/feed_item_by_label"
+                    app:layout_constraintStart_toEndOf="@+id/feed_item_by_label"
+                    app:layout_constraintTop_toTopOf="@+id/feed_item_by_label"
+                    tools:text="Author" />
+
+                <TextView
+                    android:id="@+id/feed_item_created_on_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feed_list_item_updated_on_text"
+                    android:layout_marginStart="@dimen/feed_list_item_horizontal_margin"
+                    android:layout_marginTop="@dimen/feed_list_item_vertical_margin"
+                    android:layout_marginEnd="@dimen/feed_list_item_horizontal_margin"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/feed_item_by_label" />
+
+                <TextView
+                    android:id="@+id/feed_item_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="05/20/2021"
+                    app:layout_constraintBottom_toBottomOf="@+id/feed_item_created_on_label"
+                    app:layout_constraintStart_toEndOf="@+id/feed_item_created_on_label"
+                    app:layout_constraintTop_toTopOf="@+id/feed_item_created_on_label" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
