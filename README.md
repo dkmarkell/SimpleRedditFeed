@@ -5,8 +5,11 @@ Thank you for checking out my Simple Reddit Feed!
 After cloning the repository, place ensure the following in Android Studio.
 
 Kotlin Version: 1.4.20
+
 Compiled SDK Version: 29 (minimum support for 23)
+
 JVM Target is 1.8
+
 
 With those settings configured, you can build and run the app from Android Studio.
 
@@ -22,6 +25,7 @@ On the list screen, the second tab (PINNED) contains a list of all items that we
 
 The HOT list can be refreshed by pulling down on the list. The HOT list also contains pinned items that are no longer part of the HOT list from Reddit. If you unpin an item that is no longer part of Reddit's HOT list, the item will be removed from the list (requirement 5).
 
+
 Some notes about the app:
 
 The category field was always returning null from Reddit (even in a browser), so I used the subreddit field in its place.
@@ -31,6 +35,7 @@ I made the decision to not include any unit testing. Given the nature of the pro
 If this app were to be continued, I would have used the jetpack Paging library to implement an infinite scroll. 
 
 The Feed Item page could contain a lot more information - but UIs take time to design and I don't think would have showcased much more technical ability. Getting more information to display from Reddit, would have just been a matter of adding more fields to the Data Transfer Objects and Moshi would have done the conversions.
+
 
 And finally, libraries that I chose to use:
 
