@@ -26,7 +26,7 @@ The HOT list can be refreshed by pulling down on the list. The HOT list also con
 
 The category field was always returning null from Reddit (even in a browser), so I used the subreddit field in its place.
 
-I made the decision to not include any unit testing. Given the nature of the project, I thought it would be more appropriate to showcase my ability to build and architect an Android app. I have designed the code in such a way that unit testing would be a natural progression if development were to be continued. The views are completely decoupled from the ViewModels, the repository interface could be easily extracted to be mocked and the classes and functions follow the single reponsiblity principle.
+I made the decision to not include any unit testing. Given the nature of the project, I thought it would be more appropriate to showcase my ability to build and architect an Android app. I have designed the code in such a way that unit testing would be a natural progression if development were to be continued. The ViewModels are completely decoupled from the view, the repository interface could be easily extracted to be mocked and the classes and functions follow the single reponsiblity principle.
 
 If this app were to be continued, I would have used the jetpack Paging library to implement an infinite scroll. 
 
