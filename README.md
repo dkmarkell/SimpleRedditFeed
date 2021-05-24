@@ -28,7 +28,7 @@ The category field was always returning null from Reddit (even in a browser), so
 
 I made the decision to not include any unit testing. Given the nature of the project, I thought it would be more appropriate to showcase my ability to build and architect an Android app. I have designed the code in such a way that unit testing would be a natural progression if development were to be continued. The ViewModels are completely decoupled from the view, the repository interface could be easily extracted to be mocked and the classes and functions follow the single reponsiblity principle.
 
-If this app were to be continued, I would have used the jetpack Paging library to implement an infinite scroll. 
+If this app were to be continued, I would use the Jetpack Paging library to implement an infinite scroll. 
 
 The Feed Item page could contain a lot more information - but UIs take time to design and I don't think would have showcased much more technical ability. Getting more information to display from Reddit, would have just been a matter of adding more fields to the Data Transfer Objects and Moshi would have done the conversions.  
 
