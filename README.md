@@ -2,7 +2,7 @@
 
 Thank you for checking out my Simple Reddit Feed! 
 
-After cloning the repository, place ensure the following in Android Studio.
+After cloning the repository, please ensure the following in Android Studio.
 
 <b>Kotlin Version:</b> 1.4.20  
 <b>Compiled SDK Version:</b> 29 (minimum support for 23)  
